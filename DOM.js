@@ -1,5 +1,4 @@
-
-  function playRound(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {
     if (playerSelection == "Rock")
     {
       if (computerSelection == "Scissors")
@@ -57,24 +56,6 @@
     }
   }
 
-/*
-  let win = 0;
-  let lose = 0;
-  let tie = 0;
-  const computerSelection = computerPlay();
-  console.log("You chose " + playerSelection);
-  console.log(playRound(playerSelection, computerSelection));
-
-  console.log("Your score: " + win);
-  console.log("Computer score: " + lose);
-  if (win > lose)
-    console.log("You won the match!");
-  else if (lose > win)
-    console.log("CPU won the match!");
-  else {
-    console.log("That match is a tie!");
-  }
-    */
   const buttons = document.querySelectorAll('button');
   let win = 0;
   let lose = 0;
@@ -87,17 +68,7 @@
       game(); // start the game after choices are locked in
     })
   });
-  /*
-  function rockBtn() {
-    document.getElementById('playerChoice').innerHTML="You Chose: Rock";
-  }
-  function paperBtn() {
-    document.getElementById('playerChoice').innerHTML="You Chose: Paper";
-  }
-  function scissorsBtn() {
-    document.getElementById('playerChoice').innerHTML="You Chose: Scissors";
-  }
-  */
+
   function game() {
     document.getElementById('playerChoice').innerHTML="You Chose: " + playerSelection;
     document.getElementById('cpuChoice').innerHTML="CPU Chose: " + computerSelection;
